@@ -28,3 +28,5 @@ end
 # Performance-booster for watching directories on Windows
 gem "wdm", "~> 0.1.1", :install_if => Gem.win_platform?
 
+# Current theme https://github.com/mmistakes/minimal-mistakes
+gem "minimal-mistakes-jekyll"
