@@ -17,38 +17,38 @@ unsafe= true
 
 ################################# navigation ################################
 [[menu.main]]
-name = "Faq"
-url = "faq"
+name = "Home"
+url = ""
 weight = 1
+
+# Dropdown menu
+[[menu.main]]
+weight = 2
+name = "complexity"
+hasChildren = true
+
+  [[menu.main]]
+  parent = "complexity"
+  name = "Complexity theory"
+  url = "complexity/complexity-theory"
+  weight = 1
+
+  [[menu.main]]
+  parent = "complexity"
+  name = "Accidental complexity"
+  url = "complexity/accidental-complexity"
+  weight = 2
+
+  [[menu.main]]
+  parent = "complexity"
+  name = "Essential complexity"
+  url = "complexity/essential-complexity"
+  weight = 3
 
 [[menu.main]]
 name = "contact"
 url = "contact"
-weight = 2
-
-# Dropdown menu
-[[menu.main]]
 weight = 3
-name = "docs"
-hasChildren = true
-
-  [[menu.main]]
-  parent = "docs"
-  name = "Installation"
-  url = "installation"
-  weight = 1
-
-  [[menu.main]]
-  parent = "docs"
-  name = "Billing and Pricing"
-  url = "billing-pricing"
-  weight = 2
-
-  [[menu.main]]
-  parent = "docs"
-  name = "Features"
-  url = "features"
-  weight = 3
 
 
 ############################# Default Parameters ##########################
