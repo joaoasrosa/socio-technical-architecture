@@ -1,0 +1,4 @@
+baseURL = "https://www.sociotechnicalarchitecture.com"
+languageCode = "en-us"
+title = "Socio-technical architecture"
+theme = "dot"
