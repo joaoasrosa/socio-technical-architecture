@@ -1,4 +1,92 @@
+################################# Default configuration ###################
+# provide your domain here
 baseURL = "https://www.sociotechnicalarchitecture.com"
-languageCode = "en-us"
-title = "Socio-technical architecture"
+# theme
 theme = "dot"
+# site language
+languageCode = "en-us"
+# site title
+title = "Socio-technical architecture"
+
+# google analytics
+googleAnalytics = "" # paste your analytics ID here. (Ex: UA-123-45)
+
+# unsafe html
+[markup.goldmark.renderer]
+unsafe= true
+
+################################# navigation ################################
+[[menu.main]]
+name = "Faq"
+url = "faq"
+weight = 1
+
+[[menu.main]]
+name = "contact"
+url = "contact"
+weight = 2
+
+# Dropdown menu
+[[menu.main]]
+weight = 3
+name = "docs"
+hasChildren = true
+
+  [[menu.main]]
+  parent = "docs"
+  name = "Installation"
+  url = "installation"
+  weight = 1
+
+  [[menu.main]]
+  parent = "docs"
+  name = "Billing and Pricing"
+  url = "billing-pricing"
+  weight = 2
+
+  [[menu.main]]
+  parent = "docs"
+  name = "Features"
+  url = "features"
+  weight = 3
+
+
+############################# Default Parameters ##########################
+[params]
+# logo is for all page
+logo = ""
+# logo white is for homepage logo, you can use colorful logo too...
+logo_white = ""
+# when logo is empty, it will shown your site title
+
+# customize color
+primary_color = "#02007e"
+body_color = "#f9f9f9"
+text_color = "#636363"
+text_color_dark = "#242738"
+white_color = "#ffffff"
+light_color = "#f8f9fa"
+
+# font family
+font_family = "lato" # Choose font family from : https://fonts.google.com/
+
+# contact form action
+contact_form_action = "#" # contact form works with : https://formspree.io
+
+
+############################## social links ##############################
+[[params.social]]
+icon = "ti-facebook" # themify icon pack : https://themify.me/themify-icons
+link = "#"
+
+[[params.social]]
+icon = "ti-twitter-alt" # themify icon pack : https://themify.me/themify-icons
+link = "#"
+  
+[[params.social]]
+icon = "ti-github" # themify icon pack : https://themify.me/themify-icons
+link = "#"
+  
+[[params.social]]
+icon = "ti-linkedin" # themify icon pack : https://themify.me/themify-icons
+link = "#"
