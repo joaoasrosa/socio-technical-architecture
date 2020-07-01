@@ -9,7 +9,7 @@ languageCode = "en-us"
 title = "Socio-technical architecture"
 
 # google analytics
-googleAnalytics = "" # paste your analytics ID here. (Ex: UA-123-45)
+googleAnalytics = "UA-171430164-1" # paste your analytics ID here. (Ex: UA-123-45)
 
 # unsafe html
 [markup.goldmark.renderer]
